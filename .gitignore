@@ -1,0 +1,23 @@
+# Ignore virtual environments
+genai_venv/
+
+# Ignore Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Ignore environment/config files
+.env
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore build and dist files
+build/
+dist/
+*.egg-info/
+
+# Ignore VS Code settings
+.vscode/
