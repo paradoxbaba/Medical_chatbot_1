@@ -100,6 +100,8 @@ with st.sidebar:
     Always consult healthcare professionals for medical advice.
                 
     **📝 Source Code**: [GitHub](https://github.com/paradoxbaba/Medical_chatbot_1)
+                
+    **👤 Author**: [paradoxbaba](https://github.com/paradoxbaba) - Animesh
     """)
 
     if st.button("🗑️ Clear Chat History"):
