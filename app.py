@@ -3,13 +3,32 @@ from src.rag import initialize_rag_system, get_rag_response
 
 # Page configuration
 st.set_page_config(
-    page_title="Medical Chatbot",
+    page_title="First Aid Medical Chatbot",
     page_icon="🏥",
     layout="wide"
 )
 
-st.title("🏥 Medical Chatbot")
-st.markdown("Ask me any medical questions and I'll help you with first-aid information!")
+# Inject CSS for sticky header
+st.markdown(
+    """
+    <style>
+    .sticky-header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1000;
+        padding: 10px 0;
+        border-bottom: 2px solid #f0f0f0;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Sticky title
+st.markdown('<div class="sticky-header"><h1>🏥 First Aid Medical Chatbot</h1></div>', unsafe_allow_html=True)
+
 
 @st.cache_resource
 def get_rag_chain():
