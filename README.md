@@ -33,7 +33,7 @@ Before you begin, ensure you have the following:
 
 1.  **Clone the repository**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/paradoxbaba/Medical_chatbot_1
     cd Medical_chatbot_1
     ```
 
